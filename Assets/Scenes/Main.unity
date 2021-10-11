@@ -334,7 +334,65 @@ MonoBehaviour:
   xDim: 8
   yDim: 8
   offset: 5
+  fillTime: 0.1
   blockPrefabs:
   - type: 0
+    prefab: {fileID: 5865740429982438171, guid: 92649d788b64ad24ea8e1b3671cf6a48, type: 3}
+  - type: 1
     prefab: {fileID: 515299239887632890, guid: 2d6ea2d85559f8148b2b38fca6522d9e, type: 3}
+  - type: 2
+    prefab: {fileID: 2212494481895832777, guid: 7296a2c080d042445ab629409a14d845, type: 3}
+  - type: 3
+    prefab: {fileID: 862567630446497979, guid: e8dca1918bacd3a42be5bcf9a09f6884, type: 3}
+  - type: 4
+    prefab: {fileID: 2253509247843641935, guid: e8c1a83847cf83040a68dad163b75d1a, type: 3}
   backgroundPrefab: {fileID: 4983068093625332948, guid: a641065ee5eff3541a0483ac445fa982, type: 3}
+  blockPositions: []
+  level: {fileID: 1100544384}
+--- !u!1 &1100544383
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1100544385}
+  - component: {fileID: 1100544384}
+  m_Layer: 0
+  m_Name: Level
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &1100544384
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1100544383}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 08e4b148102e62743ab6513f67c1dd37, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  grid: {fileID: 0}
+  score1Star: 0
+  score2Star: 0
+  score3Star: 0
+--- !u!4 &1100544385
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1100544383}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: -0.19000505, y: -0.05136895, z: -10.881297}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 3
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}

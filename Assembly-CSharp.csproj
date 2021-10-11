@@ -56,10 +56,14 @@
     <Analyzer Include="C:\Program Files (x86)\Microsoft Visual Studio Tools for Unity\16.0\Analyzers\Microsoft.Unity.Analyzers.dll" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Assets\Scripts\Grid.cs" />
+    <Compile Include="Assets\Scripts\ClearLine.cs" />
     <Compile Include="Assets\Scripts\Block.cs" />
-    <Compile Include="Assets\Scripts\MoveableBlock.cs" />
+    <Compile Include="Assets\Scripts\Grid.cs" />
+    <Compile Include="Assets\Scripts\ClearableBlock.cs" />
     <Compile Include="Assets\Scripts\ColorBlock.cs" />
+    <Compile Include="Assets\Scripts\Level.cs" />
+    <Compile Include="Assets\Scripts\MoveableBlock.cs" />
+    <Compile Include="Assets\Scripts\Button.cs" />
   </ItemGroup>
   <ItemGroup>
     <Reference Include="UnityEngine">

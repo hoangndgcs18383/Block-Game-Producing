@@ -5,7 +5,7 @@ using UnityEngine;
 public class Block : MonoBehaviour
 {
     #region Variables
-
+    public int score;
     private int x;
     private int y;
 
@@ -17,6 +17,7 @@ public class Block : MonoBehaviour
     private Grid grid;
     private MoveableBlock moveableBlock;
     private ColorBlock colorBlock;
+    private ClearableBlock clearableBlock;
 
     #endregion
     #region Properties
@@ -63,6 +64,10 @@ public class Block : MonoBehaviour
     {
         get { return colorBlock; }
     }
+    public ClearableBlock ClearableBlock
+    {
+        get { return clearableBlock; }
+    }
     #endregion
 
     public void Init(int _x, int _y, Grid _grip, BlockType _type)
@@ -72,11 +77,24 @@ public class Block : MonoBehaviour
         grid = _grip;
         type = _type;
     }
+    private void OnMouseEnter()
+    {
+        grid.EnterBlock(this);
+    }
+    private void OnMouseUp()
+    {
+        grid.ReleaseBlock();
+    }
+    private void OnMouseDown()
+    {
+        grid.PressBlock(this);
+    }
 
     private void Awake()
     {
         moveableBlock = GetComponent<MoveableBlock>();
         colorBlock = GetComponent<ColorBlock>();
+        clearableBlock = GetComponent<ClearableBlock>();
     }
 
     public bool IsMovable()
@@ -87,5 +105,9 @@ public class Block : MonoBehaviour
     public bool IsColored()
     {
         return colorBlock != null;
+    }
+    public bool IsCleareble()
+    {
+        return clearableBlock != null;
     }
 }
